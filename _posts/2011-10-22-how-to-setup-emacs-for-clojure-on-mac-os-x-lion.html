@@ -1,0 +1,61 @@
+---
+author: nicholasbs
+date: '2011-10-22 18:50:02'
+layout: post
+slug: how-to-setup-emacs-for-clojure-on-mac-os-x-lion
+status: publish
+title: 'How to setup Emacs for Clojure on Mac OS X Lion '
+wordpress_id: '1036'
+categories:
+- clojure
+- emacs
+- geek
+- productivity
+- slime
+---
+
+<p>These instructions should get you going with an Emacs environment for writing Clojure on Mac OS X Lion. (This should work on older versions of OS X, but I've only tried it on 10.7.)</p><ol>
+  <li>
+  <p><strong>Install Homebrew.</strong> Homebrew is an awesome package manager for OS X. You can obviously skip this step if you already have it installed. Otherwise, you can install it by reading <a href="https://github.com/mxcl/homebrew/wiki/installation">these instructions</a> or simply running:</p>
+    <code>$ /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"</code>
+  </li>
+  <li>
+    <p><strong>Install a newer version of Emacs.</strong> Lion comes with an old version of Emacs (22.1.1) by default. You'll need at least version 23. Run <code>emacs --version</code> to see what version you have. Homebrew currently has version 23.3.1, which you can install by running:</p>
+    <p><code>$ brew install emacs</code></p>
+    <p>Run <code>emacs --version</code> to make sure you've got a newer version now. (If not, try running <code>brew update</code> to get the latest package information and then <code>brew upgrade emacs</code> to install the latest packaged version.)</p>
+  </li>
+  <li>
+    <p><strong>Install Package, an Emacs package manager</strong></p>
+    <p>Create an <code>.emacs.d</code> directory if you don't already have one and a folder to store packages in:</p>
+    <code>$ mkdir ~/.emacs.d
+    $ mkdir ~/.emacs.d/packages</code>
+    <p>Create (or edit) your <code>~/.emacs.d/init.el</code> file and put the following in it:</p>
+    <code>(add-to-list 'load-path "~/.emacs.d/packages/")<br>      (require 'package)
+      (add-to-list 'package-archives
+      '("marmalade" . "http://marmalade-repo.org/packages/"))
+      (package-initialize)
+    </code>
+    <p>Put <a href="http://bit.ly/pkg-el23">package.el</a> in <code>~/.emacs.d/packages/</code>.</p>
+  </li>
+  <li>
+    <p><strong>Install <code>clojure-mode</code> and <code>paredit</code>.</strong> Open Emacs and run:</p>
+    <code>M-x eval-buffer
+      M-x package-refresh-contents
+      M-x package-install clojure-mode
+      M-x package-install paredit
+    </code>
+  </li>
+  <li>
+    <p><strong>Install Leiningen and swank-clojure.</strong></p>
+    <code>$ brew install leiningen
+      $ lein plugin install swank-clojure 1.3.3
+    </code>
+  </li>
+  <li>
+  <p><strong>Finally get a Clojure REPL in Emacs.</strong> You can create a Clojure project with Leiningen with the following command (replace <em>myproject</em> with your project name):</p>
+    <code>$ lein new <em>myproject</em></code>
+    <p>When editing a .clj file in Emacs you can run the following to get a REPL:</p>
+    <code>M-x clojure-jack-in</code>
+  </p>
+  </li>
+</ol><p>You should now have syntax highlighting, proper indentation, file navigation, and an enhanced REPL for Clojure in Emacs. You can learn more about using the REPL <a href="https://github.com/technomancy/swank-clojure">here</a>.</p>
