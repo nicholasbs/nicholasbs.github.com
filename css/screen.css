@@ -271,3 +271,8 @@ acronym {
 sup {
   line-height: 0;
 }
+
+ol.footnote {
+  margin-top: 6em;
+  color: #666;
+}
