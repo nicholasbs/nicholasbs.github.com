@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Path to Hacker School
+permalink: /2012/06/the-path-to-hacker-school
 ---
 
 This is a post to explain what [Hacker School](http://www.hackerschool.com) is. That is to say, to tell our friends and family what the heck we've been doing for the past six months and what we hope to do in the next couple years.
