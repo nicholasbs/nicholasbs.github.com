@@ -1,0 +1,83 @@
+---
+layout: post
+title: The Path to Hacker School
+permalink: /hackerschool.html
+---
+
+This is a post to explain what [Hacker School](http://www.hackerschool.com) is. That is to say, to tell our friends and family what the heck we've been doing for the past six months and what we hope to do in the next couple years.
+
+But first, some context. [Dave](http://www.dave.is) and I quit our jobs in May 2010 to build "OkCupid for jobs." That quickly turned into "video prescreens for hiring," (HireHive) which in turn begat "engineers recruiting engineers" ([Hackruiter](http://www.hackruiter.com)).
+
+[Sonali](https://twitter.com/#!/jollysonali) joined us just as we launched Hackruiter, and by six months in, we were (barely) ramen profitable and had learned a ton about recruiting and hiring. But there were a few problems: First, we were increasingly convinced that the biggest problem with hiring was that there simply weren't enough good programmers and that was the high-order bit for continued growth and success. Second, being recruiters was (and still is) soul-crushingly awful.<sup><a href="#soulcrushing">[1]</a></sup><a name="soulcrushinglink"></a>
+
+At the same time, Dave and I were discussing the shortcomings of our CS educations and bemoaning the lack of a good programming community in New York.<sup><a href="#nyscene">[2]</a></sup><a name="nyscenelink"></a> Dave started saying he wanted to start a new kind of school for programmers in a few years after we'd built Hackruiter.
+
+We reached a tipping point in late June and asked ourselves, "What would be the simplest experiment we could run to help make people better programmers?"
+
+We invited a handful of people we'd met through Hackruiter to be part of a 5-week experiment, Sonali got us free space at NYU (thanks, ITP!), and we went for it.
+
+The experiment was comparatively easy to set up, because for the first time we were building something we wanted for ourselves: A good programming education. (It didn't hurt that Dave had long been critical of Columbia's CS program, Sonali had gone to art school and had experience with project- and portfolio-based learning, and I'm a life-long [unschooler](http://en.wikipedia.org/wiki/Unschooling) with unorthodox views on education.)
+
+Some things were obvious: It'd be project-based, and we'd work on real software, in contrast to the fake stuff you write and then throw out in traditional schools. Code would be emphasized over products and prototypes. We'd only write FOSS. There would be no grades, tests, degrees or certifications.<sup><a href="#nocerts">[3]</a></sup><a name="nocertslink"></a> Saying, "I didn't know that" or "I don't understand, could you explain?" would be welcomed not mocked, and there would be no ["well, actuallys."](http://tirania.org/blog/archive/2011/Feb-17.html)
+
+We knew we were better at starting side projects than finishing them, so we built friendly social pressure into Hacker School via morning checkins. We also knew our tendency to let scope and vision creep keep us from finishing or even starting certain projects, so we built an environment and culture to keep scope creep in check.
+
+The result was Hacker School batch 0. Nine of us sat in a room four days a week working on free software projects, learning about continuations and concurrency, and bonding over burgers and burritos.
+
+How'd it go? Three of our alumni from batch 0 now work at Venmo, one went to Photoshelter, another went to Tumblr, and the last is back at college building [Angstrom](https://github.com/ArtemTitoulenko/Angstrom). Dave, Sonali and I now consider every one of them friends.
+
+Most important, we all had loved doing Hacker School and had grown substantially as programmers. We knew immediately we had to do it again.
+
+We finished our second batch in December. We doubled the number of students, extended the program to three months, and got some great free space from Spotify (thanks, Pav!).
+
+Hacker School has helped me rediscover my love of programming and to delight in code in a way I hadn't in years. Last batch, Sam and I built an [Apple II emulator](https://github.com/nicholasbs/appletoo) in JavaScript; John, Jimmy and I read and worked through the first 150 pages of [SICP](http://mitpress.mit.edu/sicp/). Dave worked on [Eventless](https://github.com/davidbalbert/eventless), his asynchronous, event-driven networking lib in Ruby. Others made significant contributions to [Brubeck](http://brubeck.io/), submitted patches to jQuery and Sorcery, and built chat servers in Python, Node, Erlang and Go, in addition to starting or contributing to over a dozen other OSS projects in nearly as many languages.
+
+We've also been lucky to have some amazing guests. Jeremy Ashkenas talked to us about the innards of the CoffeeScript compiler and language design. David Nolan wowed us with Clojure. Michael Dirolf showed what's interesting about MongoDB. Patrick McKenzie (aka patio11) conducted a live A/B test.<sup><a href="#abtest">[4]</a></sup><a name="abtestlink"></a>
+
+What's next? Batch 2, of course! We're going to double the size again to 24 people (anyone want to give us space?), and keep using our students' feedback and everything we've learned to build the best place we can for programmers to flourish and grow.
+
+We still don't know where exactly Hacker School will take us, which is part of the fun. But more than a few people have told us Hacker School changed their lives. And for the first time in a long time it feels right.
+
+Happy hacking,  
+  -Nick, Dave and Sonali
+
+<ol class="footnote">
+<li>
+  <p><a name="soulcrushing"></a>When the idea first came up to become
+  recruiters, pg warned we'd hate it. He said it'd be miserable grunt work, but
+  worthwhile for what it'd teach us. He was right on all counts.</p>
+
+  <p>A few of the many reasons recruiting sucks: You spend all your time having
+  meetings (on the order of dozens a week) and writing emails. You never code.
+  Your meetings and emails consist primarily of either rejecting people or
+  being rejected (or watching people you like get rejected, frequently for dumb
+  reasons). Desperate people lie to you, companies ignore you, and even if
+  you're ethical and upstanding, most people (understandably) initially
+  distrust you because you're a recruiter.  <a
+  href="#soulcrushinglink">↩</a></p>
+</li>
+<li>
+  <p><a name="nyscene"></a>This was tightly coupled to frustrations with the
+  New York startup "scene": Clueless business people, an emphasis on funding
+  rather than building, and an increasing number of people involved in "tech"
+  solely because it's trendy.<a href="#nyscenelink">↩</a></p>
+</li>
+<li>
+  <p><a name="nocerts"></a>It baffles me that people think more certification
+  is the answer to anything, especially solving the current shortage of good
+  programmers. Of the hundreds upon hundreds of programmers we've worked or
+  spoken with in the past year, I can't think of a single time when the
+  existence or absence of a degree made any difference. Anecdotally, we've seen
+  little correlation between being a good programmer and having a degree in
+  computer science (yes, even when it comes to understanding stuff like the
+  growth of functions or tail-call optimization). There does, however, seem to
+  be a strong correlation between writing lots of code, loving programming, and
+  being awesome.<a href="#nocertslink">↩</a></p>
+</li>
+<li>
+  <p><a name="abtest"></a>Even cooler, the heading suggested by Hacker
+  Schoolers <a
+  href="https://twitter.com/#!/patio11/status/127865161942962176">turned out to
+  be better.</a><a href="#abtestlink">↩</a></p>
+  </li>
+</ol>
