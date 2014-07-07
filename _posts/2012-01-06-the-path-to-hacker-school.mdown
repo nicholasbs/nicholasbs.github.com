@@ -32,7 +32,7 @@ We finished our second batch in December. We doubled the number of students, ext
 
 Hacker School has helped me rediscover my love of programming and to delight in code in a way I hadn't in years. Last batch, Sam and I built an [Apple II emulator](https://github.com/nicholasbs/appletoo) in JavaScript; John, Jimmy and I read and worked through the first 150 pages of [SICP](http://mitpress.mit.edu/sicp/). Dave worked on [Eventless](https://github.com/davidbalbert/eventless), his asynchronous, event-driven networking lib in Ruby. Others made significant contributions to [Brubeck](http://brubeck.io/), submitted patches to jQuery and Sorcery, and built chat servers in Python, Node, Erlang and Go, in addition to starting or contributing to over a dozen other OSS projects in nearly as many languages.
 
-We've also been lucky to have some amazing guests. Jeremy Ashkenas talked to us about the innards of the CoffeeScript compiler and language design. David Nolan wowed us with Clojure. Michael Dirolf showed what's interesting about MongoDB. Patrick McKenzie (aka patio11) conducted a live A/B test.<sup><a href="#abtest">[4]</a></sup><a name="abtestlink"></a>
+We've also been lucky to have some amazing guests. Jeremy Ashkenas talked to us about the innards of the CoffeeScript compiler and language design. David Nolen wowed us with Clojure. Michael Dirolf showed what's interesting about MongoDB. Patrick McKenzie (aka patio11) conducted a live A/B test.<sup><a href="#abtest">[4]</a></sup><a name="abtestlink"></a>
 
 What's next? Batch 2, of course! We're going to double the size again to 24 people (anyone want to give us space?), and keep using our students' feedback and everything we've learned to build the best place we can for programmers to flourish and grow.
 
