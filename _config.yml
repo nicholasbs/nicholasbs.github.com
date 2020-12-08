@@ -1,5 +1,5 @@
-markdown: redcarpet
+#markdown: redcarpet
 redcarpet:
   extensions: [smart]
-pygments: true
+highlighter: true
 permalink: /:year/:month/:title
